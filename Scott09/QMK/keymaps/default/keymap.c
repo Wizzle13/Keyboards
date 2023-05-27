@@ -5,17 +5,17 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
-     * ┌───┬───┬───┐
-     * │ 1 │ 2 │ 3 │ 
-     * ├───┼───┼───┤
-     * │ 4 │ 5 │ 6 │ 
-     * ├───┼───┼───┤
-     * │ 7 │ 8 │ 9 │ 
-     * └───┴───┴───┘
+     * ┌────────────┬───────────┬───────────┐
+     * │ Sideboard  │ Roll Dice │ Draw Hand │ 
+     * ├────────────┼───────────┼───────────┤
+     * │ Life Total │ Draw Card │ Untap     │ 
+     * ├────────────┼───────────┼───────────┤
+     * │ set P/T    │ minus 1   │ plus 1    │ 
+     * └────────────┴───────────┴───────────┘
      */
     [0] = LAYOUT_ortho_3x3(
-        KC_1,   KC_2,   KC_3,
-        KC_4,   KC_5,   KC_P6,
-        KC_7,   KC_8,   KC_9
+        LCTL(KC_F3),   LCTL(KC_I),   LCTL(KC_E),
+        LCTL(KC_L),   LCTL(KC_D),   LCTL(KC_U),
+        LCTL(KC_P),   KC_F11,   KC_F12
     )
 };
